@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
+.font-family {
+  font-family: "Poppins", sans-serif;
+}
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.largeNavIcon {
+  font-size: 35px;
+  margin-right: 10px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+input {
+  font-family: "Raleway", sans-serif;
+}
+.itemCardImage {
+  height: 150px !important;
+  object-fit: scale-down;
+}
+.itemCard,
+.itemCardBadge {
+  margin: 8px;
+}
+.searchBar-wrap {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.searchBar-icon {
+  color: black;
+  margin-right: 2rem;
+  font-size: large;
+}
+.searchBar-wrap input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+.hr-bw {
+  opacity: 1;
+}
+.fontP {
+  font-size: 14px;
+}
+.btn-space {
+  margin-right: 20px !important;
+}
+.bkgroundCard {
+  background-color: #c7e4d9;
+}
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+ 
+}
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+
+/* Home */
+.data-text {
+font-weight: bolder;
+  font-size: 100px;
+  line-height: 90px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #009E60;
+  background: url(./Users/images/back.png);
+  -webkit-background-clip: text;
+background-position: 0 0 ;
+animation: back 20s linear infinite;
+
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+.fa-3x{
+  font-size:1.5em !important;
+}
+
+
+.typewriter{
+  position: relative;
+  font-size: 18px;
+}
+.typewriter::after{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color:#c7e4d9;
+  width: 100%;
+  animation: typing 3s steps(14) alternate infinite,
+              line 1s infinite;
+}
+@keyframes typing{
+  to{
+      width: 0%;
+  }
+}
+@keyframes line {
+  50%{
+      color: transparent;
+  }
+}
+
+.signText{
+  font-size: 14px;
+}
+
+.boldLink{
+  font-weight: 500;
+  font-size: 17px;
+}
+/* Loader */
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+}
+  .loader:before,
+  .loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+  }
+  .loader:after {
+    color: #ff9900;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+  }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
+
+   

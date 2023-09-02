@@ -1,0 +1,76 @@
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+  
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .stat {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--grey);
+    border-top: 0.3px solid rgba(255, 255, 255, 0.185);
+    border-bottom: 0.3px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(90deg,
+            rgba(53, 53, 53, 0) 1.21%,
+            rgba(53, 53, 53, 0.46) 49.45%,
+            rgba(53, 53, 53, 0) 103.83%);
+    padding: 1.5rem 1rem;
+  }
+  .stat > :nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .stat > :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .orders {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   gap: 1.5rem;
+  }
+  .order>div{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      color: grey;
+      font-size: 0.85rem;
+  }
+  
+  .order>:nth-child(1)
+  {
+      margin-bottom: 0.8rem;
+  }
+  .order>:nth-child(1)>:nth-child(1)
+  {
+      font-size: 1rem;
+  }
+  .order>:nth-child(1)>:nth-child(2)
+  {
+      font-size: 0.8rem;
+      color: rgb(238, 196, 11, 0.7);
+  }
+  .orderChart{
+      width: 100%;
+  }
+  .orderChart>:nth-child(1)
+  {
+      text-align: center;
+  }
